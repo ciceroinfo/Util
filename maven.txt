@@ -1,0 +1,9 @@
+# traz os archetype com filtro
+mvn archetype:generate -Dfilter=javaee6
+
+ou
+
+mvn archetype:generate -Dfilter=org.apache:struts
+
+
+# 
