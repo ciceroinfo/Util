@@ -1,9 +1,33 @@
+# Passos para criar um projeto web com a seguinte estrutura:
+
+_ NomeProjeto
+ _ NomeProjeto-ear
+ _ NomeProjeto-ejb
+ _ NomeProjeto-web
+ 
+# No cmd execute os comandos abaixo
 # traz os archetype com filtro
 mvn archetype:generate -Dfilter=javaee6
-
 ou
+mvn archetype:generate -Dfilter=org.jboss:javaee6
 
-mvn archetype:generate -Dfilter=org.apache:struts
+$ 9: remote -> org.jboss.archetype.eap:jboss-javaee6-webapp-ear-blank-archetype (An archetype that generates a starter Java EE 6 webapp project for JBoss EAP 6. The project is an EAR, with an EJB-JAR and WAR)
 
+$ Choose a number or apply filter (format: [groupId:]artifactId, case sensitive contains): : 9
 
-# 
+$ Choose org.jboss.archetype.eap:jboss-javaee6-webapp-ear-blank-archetype version
+$ 1: 6.2.0.GA
+$ 2: 6.3.0.GA
+$ 3: 6.4.0.GA
+$ Choose a number: 3: 3
+
+$ Define value for property 'groupId': : com.ciceroinfo
+$ Define value for property 'artifactId': : Teste3
+$ Define value for property 'version':  1.0-SNAPSHOT: :
+$ Define value for property 'package':  com.ciceroinfo: :
+$ Confirm properties configuration:
+$ groupId: com.ciceroinfo
+$ artifactId: Teste3
+$ version: 1.0-SNAPSHOT
+$ package: com.ciceroinfo
+$  Y: : Y
